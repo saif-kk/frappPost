@@ -1,0 +1,27 @@
+{
+  "name": "frapptask",
+  "version": "1.0.0",
+  "description": "task",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "bluebird": "^3.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.3",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.24.0",
+    "mongodb": "^3.0.0",
+    "mongoose": "^5.9.5",
+    "morgan": "^1.9.1",
+    "underscore": "^1.9.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "frapp start",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

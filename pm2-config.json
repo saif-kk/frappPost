@@ -1,0 +1,18 @@
+{
+    "apps": [
+        {
+            "name": "frapptask",
+            "script": "./server.js",
+            "watch": true,
+            "cluster" : false,
+            "env": {
+                "NODE_ENV": "dev",
+                "PORT": "3002",
+                "DB_USERNAME" : "",
+                "DB_PASSWORD" : "",
+                "DB_MONGO_URL": "mongodb://127.0.0.1:27017/",
+                "DB_NAME": "frapp"
+            }
+        }
+    ]
+}
