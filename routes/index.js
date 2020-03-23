@@ -10,6 +10,7 @@ router.post('/api/user/signin', mainRouteController.userSignIn);
 
 router.post('/api/user/addpost', authController.validateToken, mainRouteController.addPost);
 router.get('/api/user/getPostAll', authController.validateToken, mainRouteController.getAllPost);
+router.get('/api/user/getPost', authController.validateToken, mainRouteController.getUserPost);
 router.patch('/api/user/comment/post', authController.validateToken, mainRouteController.addComment);
 router.patch('/api/user/postUpdate', authController.validateToken, mainRouteController.updatePost);
 router.delete('/api/user/deletePost', authController.validateToken, mainRouteController.deletePost);

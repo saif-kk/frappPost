@@ -52,7 +52,7 @@ var userControllerr = (function () {
         },
 
         getAllPost: function(from, size){
-            return postModel.find({})
+            return postModel.find({'comment.status' : 1})
             .skip(from).limit(size)
             .populate({
                 path: 'userId',
@@ -69,7 +69,7 @@ var userControllerr = (function () {
         },
 
         getUserPost: function(from, size, userId){
-            return postModel.find({userId : userId.userId})
+            return postModel.find({'userId' : userId.userId, 'comment.status' : 1})
             .skip(from).limit(size)
             .populate({
                 path: 'userId',
